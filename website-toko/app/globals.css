@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Canvas & Neutral System */
+  --bg-bone: #F9F6F0;           /* Main background: Warm Bone White */
+  --bg-card: #FAF8F5;           /* Surface background for product cards */
+  --bg-surface-subtle: #F0EDE6;  /* Input fills, hover states, soft dividers */
+  --border-muted: #E2DDD3;      /* Subtle crisp card borders */
+
+  /* Typography Colors */
+  --text-primary: #18171A;       /* Charcoal for maximum legibility */
+  --text-secondary: #65626A;     /* Muted metadata, prices, tags */
+
+  /* Purple Accents (Restrained & Muted) */
+  --purple-accent: #735D8A;      /* Primary CTA, active filters, primary links */
+  --purple-hover: #5D4972;       /* Hover state for buttons/links */
+  --purple-mist: #F2EEF6;        /* Subtle badge/tag background fill */
+}
+
+
+
+@theme inline {
+  /* Color Mappings */
+  --color-background: var(--bg-bone);
+  --color-card: var(--bg-card);
+  --color-surface-subtle: var(--bg-surface-subtle);
+  --color-border-muted: var(--border-muted);
+
+  --color-foreground: var(--text-primary);
+  --color-muted: var(--text-secondary);
+
+  --color-accent-purple: var(--purple-accent);
+  --color-accent-purple-hover: var(--purple-hover);
+  --color-accent-purple-mist: var(--purple-mist);
+
+  /* Font Mappings */
+  --font-sans: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Playfair Display", "Georgia", "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pantsBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF6"/>
+      <stop offset="100%" stop-color="#F2ECE2"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#735D8A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="750" fill="url(#pantsBgGrad)"/>
+  <circle cx="300" cy="380" r="210" fill="none" stroke="#E2DDD3" stroke-width="1" stroke-dasharray="4 4" opacity="0.6"/>
+
+  <!-- Sweatpants Vector -->
+  <g filter="url(#softShadow)" transform="translate(0, 50)">
+    <!-- Waistband -->
+    <rect x="200" y="100" width="200" height="34" rx="6" fill="#EFE8DC" stroke="#D3CDC0" stroke-width="1.5"/>
+    
+    <!-- Drawstrings -->
+    <path d="M 290,125 Q 285,170 275,195" fill="none" stroke="#735D8A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 310,125 Q 315,170 325,195" fill="none" stroke="#735D8A" stroke-width="3" stroke-linecap="round"/>
+    <rect x="272" y="195" width="6" height="12" rx="2" fill="#5D4972"/>
+    <rect x="322" y="195" width="6" height="12" rx="2" fill="#5D4972"/>
+
+    <!-- Left Leg & Right Leg -->
+    <path d="M 200,134 L 185,550 C 185,558 190,562 200,562 L 255,562 C 265,562 270,558 270,550 L 290,320 L 310,320 L 330,550 C 330,558 335,562 345,562 L 400,562 C 410,562 415,558 415,550 L 400,134 Z" fill="#F8F5EE" stroke="#DDD7CC" stroke-width="2"/>
+
+    <!-- Zipper pocket detail on left hip -->
+    <line x1="210" y1="160" x2="235" y2="225" stroke="#735D8A" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="210" cy="160" r="3" fill="#5D4972"/>
+
+    <!-- Elastic Cuffs -->
+    <rect x="187" y="550" width="70" height="20" rx="4" fill="#EFE8DC" stroke="#D3CDC0" stroke-width="1.5"/>
+    <rect x="343" y="550" width="70" height="20" rx="4" fill="#EFE8DC" stroke="#D3CDC0" stroke-width="1.5"/>
+
+    <!-- Mascot Tag on Thigh -->
+    <g transform="translate(240, 260) scale(0.28)">
+      <circle cx="0" cy="0" r="28" fill="#F4EEF8" stroke="#735D8A" stroke-width="2"/>
+      <ellipse cx="0" cy="2" rx="18" ry="15" fill="#FFFFFF" stroke="#735D8A" stroke-width="2"/>
+      <circle cx="-7" cy="0" r="6" fill="none" stroke="#735D8A" stroke-width="2"/>
+      <circle cx="7" cy="0" r="6" fill="none" stroke="#735D8A" stroke-width="2"/>
+      <line x1="-1" y1="0" x2="1" y2="0" stroke="#735D8A" stroke-width="2"/>
+    </g>
+    <text x="255" y="264" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="600" fill="#735D8A">hazy-bnuy</text>
+  </g>
+
+  <!-- Clean Floating Badge -->
+  <g transform="translate(300, 680)">
+    <rect x="-85" y="-16" width="170" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.95" stroke="#E2DDD3" stroke-width="1"/>
+    <circle cx="-65" cy="0" r="4" fill="#735D8A"/>
+    <text x="-52" y="4" font-family="sans-serif" font-size="11" font-weight="600" fill="#18171A" letter-spacing="1">BNUY TERRY PANTS</text>
+  </g>
+</svg>
